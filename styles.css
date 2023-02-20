@@ -34,8 +34,9 @@ body {
   background-color: var(--dark_cyan);
   background-image: url(./images/bg-pattern-top.svg),
     url(./images/bg-pattern-bottom.svg);
-  background-position: -50% -50%, 220% 150%;
-  background-size: 350px, 400px;
+  background-position: right 50vw bottom 45vh, left 50vw top 50vh;
+  /* background-size: 70vw, 70vw; */
+  /* background-size: auto; */
   /* background-position: calc(100% - 30px) 10%; */
 
   background-repeat: no-repeat;
@@ -127,3 +128,17 @@ h2 {
   text-align: center;
   padding: 0.3em;
 }
+
+/* @media (min-width: 600px) {
+  body {
+    background-position: -60% -60%, 150% 150%;
+    background-size: 60vw, 60vw;
+  }
+}
+
+@media (min-width: 700px) {
+  body {
+    background-position: -50% -200%, 150% 150%;
+    background-size: 58vw, 60vw;
+  }
+} */
