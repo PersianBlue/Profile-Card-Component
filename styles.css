@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  /*Primary*/
+  --dark_cyan: hsl(185, 75%, 39%);
+  --very_dark_desaturated_blue: hsl(229, 23%, 23%);
+  --dark_grayish_blue: hsl(227, 10%, 46%);
+  /*Neutral*/
+  --dark_gray: hsl(0, 0%, 59%);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  border: solid 3px green;
+}
+body {
+  /* margin: 0; */
+  font-family: "Kumbh Sans", sans-serif;
+  min-height: 100%;
+  /* border: solid 3px black; */
+  background-color: var(--dark_cyan);
+  background-image: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+  background-position: -50% -50%, 220% 150%;
+  background-size: 350px, 400px;
+  /* background-position: calc(100% - 30px) 10%; */
+
+  background-repeat: no-repeat;
+}
+
+p {
+  color: var(--dark_gray);
+}
+
+h2 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.dark_blue {
+  color: var(--very_dark_desaturated_blue);
+}
+
+.dark_gray {
+  color: dark var(--dark_gray);
+}
+
+.main {
+  /* display: none; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+
+  /* border: solid 3px red; */
+  /* height: 100%; */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+  background-color: white;
+  margin: 0 auto;
+  /* border: solid 1px red; */
+  border-radius: 10px;
+  background-image: url(./images/bg-pattern-card.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.profilePicWrapper {
+  /* border: solid 3px black; */
+  /* width: fit-content; */
+  border-radius: 50%;
+  margin-top: 5em;
+}
+
+.profilePic {
+  max-width: 100%;
+  border-radius: 50%;
+}
+.userInfo {
+  display: flex;
+  padding: 0px 0.5em;
+  gap: 0.5em;
+  /* border: solid 1px red; */
+  margin-bottom: 0;
+}
+
+.age {
+  font-size: 1.125rem;
+  font-weight: lighter;
+}
+
+.location {
+  /* margin: 0; */
+}
+
+.divider {
+  border-top: 1px solid #bbb;
+  height: 0.5px;
+  width: 100%;
+  margin-bottom: 0;
+}
+.stats {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* border: solid 3px red; */
+}
+.col {
+  text-align: center;
+  padding: 0.3em;
+}
